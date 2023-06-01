@@ -5,8 +5,8 @@ mv /etc/update-motd.d/* /etc/update-motd.d/old/
 
 rm /etc/motd
 
-wget https://raw.githubusercontent.com/TyouZ54/MotdCustonux/main/Content1 -O /etc/update-motd.d/00-motd
-wget https://raw.githubusercontent.com/TyouZ54/MotdCustonux/main/Content2 -O /etc/update-motd.d/10-motd
+wget --inet4-onl https://raw.githubusercontent.com/TyouZ54/MotdCustonux/main/Content1 -O /etc/update-motd.d/00-motd
+wget --inet4-onl https://raw.githubusercontent.com/TyouZ54/MotdCustonux/main/Content2 -O /etc/update-motd.d/10-motd
 
 chmod +x /etc/update-motd.d/00-motd
 chmod +x /etc/update-motd.d/10-motd
